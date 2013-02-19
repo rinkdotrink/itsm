@@ -1,4 +1,19 @@
+Mit einer Nagios XI Lizenz gibt es 
 
-Support für Nagios XI gibt es in einem online forum unter
+\begin{itemize}
+ \item technischen Support - via EMail oder in einem speziellen customer-only Abschnitt im online forum unter
 
 \url{http://support.nagios.com/forum}
+
+\item Support - je nach Lizenz-Level werden pro Jahr bis zu 10 Support Incidents bearbeitet.
+
+\item Training - ein volles Jahr Zugriff auf Ressourcen für das Selbststudium von Nagios XI und Nagios addons.
+
+\item eine unbefristete Lizenz - die Lizenz der Software ist dauerhaft, selbst wenn kein zukünftiger Support oder Wartungsverträge geschlossen werden.
+
+\item die Nagios Library - für ein volles Jahr kann auf spezielle Nagios Libraries zugegriffen werden, mit customer-only Tutorials, Videos und Tech Tipps.
+
+\item Produkt-Einfluss - Feature Requests können eingereicht werden.
+
+\item freie Lizenzwahl für selbstgeschriebene Erweiterungen - es können beliebige Lizenzen für eigene Erweiterungen für Nagios XI gewählt werden: z.B. Open Source, proprietär oder public domain.
+\end{itemize}

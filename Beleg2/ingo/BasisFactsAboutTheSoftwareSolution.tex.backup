@@ -1,0 +1,27 @@
+Please describe the basic characteristics of the software. 
+
+Is is a web-based solution? 
+Ja
+
+Is it installable or just available as a service? 
+Die Software ist installierbar.
+
+How much effort does the installation take (describe and give a time for the installation)? 
+
+
+
+How old is the software? When did its development start? 
+1999 veröffentlichte Ethan Galstad Nagios - dass damals noch NetSaint hieß - als Open Source Projekt.
+http://www.nagios.org/about/history
+
+Which version is it (0.1?)? 
+Netsaint 0.0.1
+\url{http://www.ussrback.com/UNIX/audit/netsaint/index.html}
+
+Is it well established? How many customers are using it? 
+Es wird geschätzt, dass es weltweit ca 1 Million Nagios Nutzer gibt.
+http://www.nagios.org/about/community
+
+
+Is it still further developed - are new releases planned and when was the last release?
+Es wird immernoch weiterentwickelt. Neue Releases sind geplant. Die letzte Version 2012R1.6 ist von 15. Februar 2013.

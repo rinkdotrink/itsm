@@ -10,6 +10,7 @@ Nagios besteht aus verschiedenen Nagios Projekten:
 \end{itemize}
 
 Nagios Core, Nagios Plugins, Nagio Frontends und Nagios Addons sind Open Source.
+
 Das Nagios XI besteht sowohl aus open source software wie dem Nagios Core, als auch aus kommerziellen Lizenzen die nicht unter einer open source software Lizenz veröffentlich wurden, wie dem Nagios XI UI und den System Frameworks.
 
 Nagios Core gibt es in verschiedenen Editionen, die sich im Preis, Feature-Set, Suppot und Training unterscheiden.
@@ -45,6 +46,147 @@ Executive Reports	 	 &	 &	&	&	Y\\
 Email and Phone Support	 	 &	 &	&	&	Y\\
 \end{tabular}
 
-Nagios XI ist ein enterprise-class monitoring und alterting Lösung, die auf Nagios Core aufbaut. Nagios besitzt ein PHP Web Interface, eine integrierte Performance Visualisierung, anpassbare Dashboards, Web Configuration GUI, Configuration Wizards, User Management und mehr.
+Nagios XI ist ein enterprise-class monitoring und alerting Lösung, die auf Nagios Core aufbaut. Nagios besitzt ein PHP Web Interface, eine integrierte Performance Visualisierung, anpassbare Dashboards, Web Configuration GUI, Configuration Wizards, User Management und mehr.
 
-Free for small environments! Learn more.
+Vergleich von Nagios Core und Nagios XI
+
+\begin{tabular}{l|c|c}
+Feature & Nagios XI & Nagios Core OSS \\
+\hline
+\textbf{Infrastructure Monitoring}	&  &  \\
+-Servers				&Y  &Y  \\
+-Network Elements		&Y  &Y  \\
+-Applications			&Y  &Y  \\
+-System Metrics			&Y  &Y  \\
+-Custom Services			&Y  &Y  \\
+\textbf{Alerting}			&  &  \\
+-Email				&Y  &Y  \\
+-Mobile Phone			&Y  &Y  \\
+-Custom Method			&Y  &Y  \\
+\textbf{Reports}				&Y  &Y  \\
+\textbf{User-Specific Interface Customization}	&Y  &  \\
+\textbf{Advanced Dashboards}		&Y  &  \\
+\textbf{Web Configuration Interface}	&Y  &  \\
+\textbf{Configuration Wizards}		&Y  &  \\
+\textbf{Session Authentication}		&Y  &  \\
+\textbf{Performance Graphs}		&Y  &  \\
+\textbf{Database Backend}		&Y  &  \\
+\textbf{Multi-Tenant Capabilities}	&Y  &Y  \\
+\textbf{Customizable}			&Y  &Y  \\
+\textbf{Distributed Monitoring Capabilities}	&Y  &Y  \\
+\textbf{Extendable Architecture}		&Y  &Y  \\
+\textbf{Proven OSS Core}			&Y  &Y  \\
+\textbf{Professional Support Options}	&Y  &Y  \\
+\end{tabular}
+
+
+
+Für kleine Umgebungen ist Nagios XI kostenfrei.
+
+Unter
+
+\url{http://www.nagios.com/products/nagiosxi/pricing/}
+
+sind die Preise für die jeweiligen Lizenzen für Nagios XI aufgeführt.
+
+Die Preise für Nagios XI hängen vom Lizenz Level ab, dass gewählt wird. Die Lizenzlevel hängen von der Anzahl der unterstützten Hosts ab:
+
+\begin{tabular}{l|l|l|l}
+License Level	& Initial Price	 & Renewal Price	& Support Incidents Included \\
+\hline
+Unlimited Hosts	& \$4,995 USD	&\$4,000 USD		& 10 \\
+101 - 200 Hosts	& \$2,995 USD	&\$2,000 USD		& 5 \\
+UP To 100 Hosts	& \$1,995 USD	&\$1,650 USD		& 3 \\
+\end{tabular}
+
+
+
+
+Nagios XI 2012 ist in zwei Editionen verfügbar: Standard und Enterprise.
+
+\begin{tabular}{p{3cm}|p{1cm}|p{1cm}|p{10cm}}
+ 
+
+Features \ Edition & Stan\-dard & Enter\-prise & Benefit \\
+\hline
+Configuration Rollback & Y & Y & Allows administrators to easily recover from configuration errors by rolling back to known good snapshots. \\
+
+New wizards and components &Y&Y& New wizards and components add additional functionality and are automatically installed and upgraded with each new release.\\
+
+Tools menu &Y&Y& Allows users to integrate custom and 3rd-party applications directly into the XI interface to increase productivity.\\
+
+Bandwidth report &Y&Y& Provides detailed daily, monthly, quarterly, and yearly bandwidth reports for routers and switches.\\
+
+Executive summary report &Y&Y& Provides management, administrators, and decision-makers with at-a-glance visibility into recent alerts and activity.\\
+
+Heartbeat monitoring &Y&Y& Provides essential monitoring of critical hosts and applications on remote machines.\\
+
+Custom action URLs &Y&Y& Provides users with ability to add customized links to each host and service.\\
+
+NOC screens &Y&Y& Provides at-a-glance overview of IT operations from a single screen.\\
+
+Host rename tool &Y&Y& Allows administrators to quickly and efficiently rename hosts and retain historical performance and alert data.\\
+
+Emailed reports &Y&Y& Allows users to quickly email reports to themselves, team members, and other decision makers.\\
+
+Enhanced Configuration GUI &Y&Y& Improved GUI for monitoring configuration makes complex tasks easier.\\
+
+Mobile Interface &Y&Y& Provides compact, intuitive interface for mobile phones and devices.\\
+
+Custom Host and Service Actions &Y&Y& Allows administrators to define commands and actions that are readily available to user for troubleshooting and fixing problems, opening trouble tickets, and more.\\
+
+Capacity planning report &&Y& Provides trending analysis and capacity planning for predicting future upgrade requirements.\\
+
+Web-based server console access &&Y& Provides fast, web-based access to the XI server console for performing upgrades and maintenance.\\
+
+Advanced business process monitoring &&Y& Provides advanced reporting of critical business processes with automatic group synchronization, advanced grouping logic, and advanced permissions.\\
+
+Scheduled reports &&Y& Provides regularly scheduled reports to be sent to decision makers, management, and administrators via email.\\
+\end{tabular}
+
+
+\begin{tabular}{p{3cm}|p{1cm}|p{1cm}|p{10cm}}
+Features \ Edition & Stan\-dard & Enter\-prise & Benefit \\
+\hline
+
+Scheduled pages &&Y& Allows users to schedule any XI web page to be delivered via email as PDF attachments on a scheduled basis. Great for sending dashboards, custom screens, and more.\\
+
+Bulk modification tool &&Y& Allows administrators to quickly modify attributes of thousands of hosts and services in a few simple steps.\\
+
+Bulk notification settings tool &&Y& Allows administrators to quickly deploy notification settings to users in a few simple steps.\\
+
+Audit Logging &&Y& Provides an audit trail of changes and modifications to ensure policy compliance.\\
+
+Improved Autodiscovery &&Y& Provides easy integration with bulk monitoring wizard for rapid monitoring of newly discovered devices.\\
+
+Remote Machine Monitoring &&Y& Provides easy to use monitoring of remote machines and devices on external networks without firewall modifications.\\
+
+Escalation Wizard &&Y& Allows users to easily create notification escalation policies.\\
+
+\end{tabular}
+
+Die Kosten für die Enterprise Edition werden auf den Basis-Kaufpreis addiert:
+
+\begin{tabular}{l|l}
+ Initial Price	& Renewal Price \\
+\$1,500 USD	& \$750 USD \\
+\end{tabular}
+
+Es gibt auch eine kostenlose Lizenz von Nagios XI für kleine Umgebungen:
+Mit der kostenlosen Lizenz lassen sich bis zu 7 Hosts/Nodes monitoren mit einer unbegrenzten Anzahl von Services. In der freien Lizenz sind keine Support Dienste enthalten.
+
+
+Es gibt verschiedene Nagios XI Download Typen:
+
+\begin{itemize}
+\item Als VMware Virtual Maschine 32-bit und 64-bit: eine VMware virtual machine auf der CentOS 6.x läuft und auf der Nagios XI 2012 installiert ist.
+
+\item Als vSphere OVF Template 32-bit und 64-bit: ein OVF template auf dem CentOS 6.x läuft und Nagios XI 2012 installiert ist.
+
+\item Als Microsoft Virtual Machine 32-bit und 64-bit: eine Microsoft Virtual Machine auf der CentOS 6.x läuft und auf der Nagios XI 2012 installiert ist.
+
+\item Als Linux Source Installer: um Nagios XI 2012 manuell zu installieren.
+\end{itemize}
+
+
+

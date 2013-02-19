@@ -97,13 +97,95 @@ License Level	& Initial Price	 & Renewal Price	& Support Incidents Included \\
 Unlimited Hosts	& \$4,995 USD	&\$4,000 USD		& 10 \\
 101 - 200 Hosts	& \$2,995 USD	&\$2,000 USD		& 5 \\
 UP To 100 Hosts	& \$1,995 USD	&\$1,650 USD		& 3 \\
+\end{tabular}
 
 
 
 
-Es gibt Nagios XI Standard Edition und Nagios XI Enterprise Edition.
+Nagios XI 2012 ist in zwei Editionen verfügbar: Standard und Enterprise.
 
-Es gibt verschiedene Nagios XI Download Typen:
+\begin{tabular}{p{3cm}|p{1cm}|p{1cm}|p{10cm}}
+ 
+
+Features \ Edition & Stan\-dard & Enter\-prise & Benefit \\
+\hline
+Configuration Rollback & Y & Y & Allows administrators to easily recover from configuration errors by rolling back to known good snapshots. \\
+
+New wizards and components &Y&Y& New wizards and components add additional functionality and are automatically installed and upgraded with each new release.\\
+
+Tools menu &Y&Y& Allows users to integrate custom and 3rd-party applications directly into the XI interface to increase productivity.\\
+
+Bandwidth report &Y&Y& Provides detailed daily, monthly, quarterly, and yearly bandwidth reports for routers and switches.\\
+
+Executive summary report &Y&Y& Provides management, administrators, and decision-makers with at-a-glance visibility into recent alerts and activity.\\
+
+Heartbeat monitoring &Y&Y& Provides essential monitoring of critical hosts and applications on remote machines.\\
+
+Custom action URLs &Y&Y& Provides users with ability to add customized links to each host and service.\\
+
+NOC screens &Y&Y& Provides at-a-glance overview of IT operations from a single screen.\\
+
+Host rename tool &Y&Y& Allows administrators to quickly and efficiently rename hosts and retain historical performance and alert data.\\
+
+Emailed reports &Y&Y& Allows users to quickly email reports to themselves, team members, and other decision makers.\\
+
+Enhanced Configuration GUI &Y&Y& Improved GUI for monitoring configuration makes complex tasks easier.\\
+
+Mobile Interface &Y&Y& Provides compact, intuitive interface for mobile phones and devices.\\
+
+Custom Host and Service Actions &Y&Y& Allows administrators to define commands and actions that are readily available to user for troubleshooting and fixing problems, opening trouble tickets, and more.\\
+
+Capacity planning report &&Y& Provides trending analysis and capacity planning for predicting future upgrade requirements.\\
+
+Web-based server console access &&Y& Provides fast, web-based access to the XI server console for performing upgrades and maintenance.\\
+
+Advanced business process monitoring &&Y& Provides advanced reporting of critical business processes with automatic group synchronization, advanced grouping logic, and advanced permissions.\\
+
+Scheduled reports &&Y& Provides regularly scheduled reports to be sent to decision makers, management, and administrators via email.\\
+\end{tabular}
+
+
+\begin{tabular}{p{3cm}|p{1cm}|p{1cm}|p{10cm}}
+Features \ Edition & Stan\-dard & Enter\-prise & Benefit \\
+\hline
+
+Scheduled pages &&Y& Allows users to schedule any XI web page to be delivered via email as PDF attachments on a scheduled basis. Great for sending dashboards, custom screens, and more.\\
+
+Bulk modification tool &&Y& Allows administrators to quickly modify attributes of thousands of hosts and services in a few simple steps.\\
+
+Bulk notification settings tool &&Y& Allows administrators to quickly deploy notification settings to users in a few simple steps.\\
+
+Audit Logging &&Y& Provides an audit trail of changes and modifications to ensure policy compliance.\\
+
+Improved Autodiscovery &&Y& Provides easy integration with bulk monitoring wizard for rapid monitoring of newly discovered devices.\\
+
+Remote Machine Monitoring &&Y& Provides easy to use monitoring of remote machines and devices on external networks without firewall modifications.\\
+
+Escalation Wizard &&Y& Allows users to easily create notification escalation policies.\\
+
+\end{tabular}
+
+Die Kosten für die Enterprise Edition werden auf den Basis-Kaufpreis addiert:
+
+\begin{tabular}{l|l}
+ Initial Price	& Renewal Price \\
+\$1,500 USD	& \$750 USD \\
+\end{tabular}
+
+Es gibt auch eine kostenlose Lizenz von Nagios XI für kleine Umgebungen:
+Mit der kostenlosen Lizenz lassen sich bis zu 7 Hosts/Nodes monitoren mit einer unbegrenzten Anzahl von Services. In der freien Lizenz sind keine Support Dienste enthalten.
+
+Pro Nagios XI Lizenz kann ein Monitoring Server betrieben werden.
+Werden mehrere Monitoring Server benötigt, können mehrere Nagios XI Lizenzen erworben werden. Dabei gelten folgende Preisnachlässe:
+
+\begin{tabular}{l|l}
+Licenses &	Discount \\
+\hline
+2 - 4 & 10\% \\
+$>5$   & 20\% \\
+\end{tabular}
+
+Nagios XI wird in verschiedenen Formaten zum Download angeboten:
 
 \begin{itemize}
 \item Als VMware Virtual Maschine 32-bit und 64-bit: eine VMware virtual machine auf der CentOS 6.x läuft und auf der Nagios XI 2012 installiert ist.
@@ -114,6 +196,3 @@ Es gibt verschiedene Nagios XI Download Typen:
 
 \item Als Linux Source Installer: um Nagios XI 2012 manuell zu installieren.
 \end{itemize}
-
-
-
