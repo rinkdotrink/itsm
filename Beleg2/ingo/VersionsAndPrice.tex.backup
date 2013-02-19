@@ -1,0 +1,50 @@
+
+Nagios besteht aus verschiedenen Nagios Projekten:
+
+\begin{itemize}
+\item Nagios Core - enthält die Core Monitoring Engine und ein basic web interface.
+\item Nagios Plugins - eröffnet die Möglichkeit, Services, Anwendungen, Metriken, and mehr zu monitoren.
+\item Nagios Frontends - erweitert die Nagios experience mit zusätzlichen frontends.
+\item Nagios Addons - um Nagios mit hunderten addons erweitern.
+\item Nagios XI - enterprise-class monitoring und alerting Lösung, bestehend aus Nagios Core und anderen Komponenten.
+\end{itemize}
+
+Nagios Core, Nagios Plugins, Nagio Frontends und Nagios Addons sind Open Source.
+Das Nagios XI besteht sowohl aus open source software wie dem Nagios Core, als auch aus kommerziellen Lizenzen die nicht unter einer open source software Lizenz veröffentlich wurden, wie dem Nagios XI UI und den System Frameworks.
+
+Nagios Core gibt es in verschiedenen Editionen, die sich im Preis, Feature-Set, Suppot und Training unterscheiden.
+
+\begin{tabular}{l|c|c|c|c}
+ & DIY & Student & Professional & Business \\
+ & Free & \$ 50  & \$ 250 & \$ 1295+ \\
+ \hline
+Complete Infrastructure Monitoring &	Y&	Y&	Y&	Y \\
+Hundreds of Free Addons		&	Y&	Y&	Y&	Y\\
+Open Source Monitoring Engine	&	Y&	Y&	Y&	Y\\
+Forum Support			&	Y&	Y&	Y&	Y\\
+Pre-Configured Virtual Machine	 &	&	Y&	Y&	Y\\
+Quickstart Guides	 	&	&	Y&	Y&	Y\\
+Web Configuration UI	 	&	&	Y&	Y&	Y\\
+Performance Graphing (PNP)	 &	&	Y&	Y&	Y\\
+SNMP Trap Support (NSTI)	 &	&	 &	Y&	Y\\
+Mobile App	 	 	&	&	&	Y&	Y\\
+Business Process Monitoring	 &	&	 &	Y&	Y\\
+Custom Maps (Nagvis)	 	&	&	 &	Y&	Y\\
+Database Backend	 	 &	&	&	 &	Y\\
+Integrated UI	 	 	&	&	&	 &	Y\\
+Dashboards	 	 	 &	&	&	&	Y\\
+User-Specific Customization	 &	 &	&	 &	Y\\
+Configuration Wizards	 	 &	&	&	 &	Y\\
+Scheduled Reporting	 	 &	&	&	 &	Y\\
+Capacity Planning	 	 &	&	&	 &	Y\\
+Executive Reports	 	 &	&	&	 &	Y\\
+Bulk Management	 	 	 &	&	&	&	Y\\
+Configuration Rollback	 	 &	&	&	 &	Y\\
+Audit Logging	 	 	 &	&	&	&	Y\\
+Executive Reports	 	 &	 &	&	&	Y\\
+Email and Phone Support	 	 &	 &	&	&	Y\\
+\end{tabular}
+
+Nagios XI ist ein enterprise-class monitoring und alterting Lösung, die auf Nagios Core aufbaut. Nagios besitzt ein PHP Web Interface, eine integrierte Performance Visualisierung, anpassbare Dashboards, Web Configuration GUI, Configuration Wizards, User Management und mehr.
+
+Free for small environments! Learn more.

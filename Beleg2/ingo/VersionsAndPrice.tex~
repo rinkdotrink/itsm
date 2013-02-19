@@ -1,0 +1,119 @@
+
+Nagios besteht aus verschiedenen Nagios Projekten:
+
+\begin{itemize}
+\item Nagios Core - enthält die Core Monitoring Engine und ein basic web interface.
+\item Nagios Plugins - eröffnet die Möglichkeit, Services, Anwendungen, Metriken, and mehr zu monitoren.
+\item Nagios Frontends - erweitert die Nagios experience mit zusätzlichen frontends.
+\item Nagios Addons - um Nagios mit hunderten addons erweitern.
+\item Nagios XI - enterprise-class monitoring und alerting Lösung, bestehend aus Nagios Core und anderen Komponenten.
+\end{itemize}
+
+Nagios Core, Nagios Plugins, Nagio Frontends und Nagios Addons sind Open Source.
+
+Das Nagios XI besteht sowohl aus open source software wie dem Nagios Core, als auch aus kommerziellen Lizenzen die nicht unter einer open source software Lizenz veröffentlich wurden, wie dem Nagios XI UI und den System Frameworks.
+
+Nagios Core gibt es in verschiedenen Editionen, die sich im Preis, Feature-Set, Suppot und Training unterscheiden.
+
+\begin{tabular}{l|c|c|c|c}
+ & DIY & Student & Professional & Business \\
+ & Free & \$ 50  & \$ 250 & \$ 1295+ \\
+ \hline
+Complete Infrastructure Monitoring &	Y&	Y&	Y&	Y \\
+Hundreds of Free Addons		&	Y&	Y&	Y&	Y\\
+Open Source Monitoring Engine	&	Y&	Y&	Y&	Y\\
+Forum Support			&	Y&	Y&	Y&	Y\\
+Pre-Configured Virtual Machine	 &	&	Y&	Y&	Y\\
+Quickstart Guides	 	&	&	Y&	Y&	Y\\
+Web Configuration UI	 	&	&	Y&	Y&	Y\\
+Performance Graphing (PNP)	 &	&	Y&	Y&	Y\\
+SNMP Trap Support (NSTI)	 &	&	 &	Y&	Y\\
+Mobile App	 	 	&	&	&	Y&	Y\\
+Business Process Monitoring	 &	&	 &	Y&	Y\\
+Custom Maps (Nagvis)	 	&	&	 &	Y&	Y\\
+Database Backend	 	 &	&	&	 &	Y\\
+Integrated UI	 	 	&	&	&	 &	Y\\
+Dashboards	 	 	 &	&	&	&	Y\\
+User-Specific Customization	 &	 &	&	 &	Y\\
+Configuration Wizards	 	 &	&	&	 &	Y\\
+Scheduled Reporting	 	 &	&	&	 &	Y\\
+Capacity Planning	 	 &	&	&	 &	Y\\
+Executive Reports	 	 &	&	&	 &	Y\\
+Bulk Management	 	 	 &	&	&	&	Y\\
+Configuration Rollback	 	 &	&	&	 &	Y\\
+Audit Logging	 	 	 &	&	&	&	Y\\
+Executive Reports	 	 &	 &	&	&	Y\\
+Email and Phone Support	 	 &	 &	&	&	Y\\
+\end{tabular}
+
+Nagios XI ist ein enterprise-class monitoring und alerting Lösung, die auf Nagios Core aufbaut. Nagios besitzt ein PHP Web Interface, eine integrierte Performance Visualisierung, anpassbare Dashboards, Web Configuration GUI, Configuration Wizards, User Management und mehr.
+
+Vergleich von Nagios Core und Nagios XI
+
+\begin{tabular}{l|c|c}
+Feature & Nagios XI & Nagios Core OSS \\
+\hline
+\textbf{Infrastructure Monitoring}	&  &  \\
+-Servers				&Y  &Y  \\
+-Network Elements		&Y  &Y  \\
+-Applications			&Y  &Y  \\
+-System Metrics			&Y  &Y  \\
+-Custom Services			&Y  &Y  \\
+\textbf{Alerting}			&  &  \\
+-Email				&Y  &Y  \\
+-Mobile Phone			&Y  &Y  \\
+-Custom Method			&Y  &Y  \\
+\textbf{Reports}				&Y  &Y  \\
+\textbf{User-Specific Interface Customization}	&Y  &  \\
+\textbf{Advanced Dashboards}		&Y  &  \\
+\textbf{Web Configuration Interface}	&Y  &  \\
+\textbf{Configuration Wizards}		&Y  &  \\
+\textbf{Session Authentication}		&Y  &  \\
+\textbf{Performance Graphs}		&Y  &  \\
+\textbf{Database Backend}		&Y  &  \\
+\textbf{Multi-Tenant Capabilities}	&Y  &Y  \\
+\textbf{Customizable}			&Y  &Y  \\
+\textbf{Distributed Monitoring Capabilities}	&Y  &Y  \\
+\textbf{Extendable Architecture}		&Y  &Y  \\
+\textbf{Proven OSS Core}			&Y  &Y  \\
+\textbf{Professional Support Options}	&Y  &Y  \\
+\end{tabular}
+
+
+
+Für kleine Umgebungen ist Nagios XI kostenfrei.
+
+Unter
+
+\url{http://www.nagios.com/products/nagiosxi/pricing/}
+
+sind die Preise für die jeweiligen Lizenzen für Nagios XI aufgeführt.
+
+Die Preise für Nagios XI hängen vom Lizenz Level ab, dass gewählt wird. Die Lizenzlevel hängen von der Anzahl der unterstützten Hosts ab:
+
+\begin{tabular}{l|l|l|l}
+License Level	& Initial Price	 & Renewal Price	& Support Incidents Included \\
+\hline
+Unlimited Hosts	& \$4,995 USD	&\$4,000 USD		& 10 \\
+101 - 200 Hosts	& \$2,995 USD	&\$2,000 USD		& 5 \\
+UP To 100 Hosts	& \$1,995 USD	&\$1,650 USD		& 3 \\
+
+
+
+
+Es gibt Nagios XI Standard Edition und Nagios XI Enterprise Edition.
+
+Es gibt verschiedene Nagios XI Download Typen:
+
+\begin{itemize}
+\item Als VMware Virtual Maschine 32-bit und 64-bit: eine VMware virtual machine auf der CentOS 6.x läuft und auf der Nagios XI 2012 installiert ist.
+
+\item Als vSphere OVF Template 32-bit und 64-bit: ein OVF template auf dem CentOS 6.x läuft und Nagios XI 2012 installiert ist.
+
+\item Als Microsoft Virtual Machine 32-bit und 64-bit: eine Microsoft Virtual Machine auf der CentOS 6.x läuft und auf der Nagios XI 2012 installiert ist.
+
+\item Als Linux Source Installer: um Nagios XI 2012 manuell zu installieren.
+\end{itemize}
+
+
+
