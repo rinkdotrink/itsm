@@ -1,0 +1,191 @@
+%%======================================================================
+%% Hauptdokument
+%%======================================================================
+
+\documentclass[
+    11pt,               % KOMA default
+    a4paper,            % DIN A4
+    twoside,            % Zweiseitig
+    headsepline,        % Linie unter der Kopfzeile
+    foodsepline,        % Linie über Fussnote
+    automark,           % Kolumnentitel lebendig
+    smallheadings,      % Überschriften eher klein setzen
+    pointlessnumbers,   % Keinen Punkt hinter die letzte Zahl
+                        % eines Kapitels (auch bei Anhang)
+    openleft,           %
+    cleardoubleplain,   %
+    abstracton,         %
+    idxtotoc,           % Index soll im Inhaltsverzeichnis auftauchen
+    liststotoc,         %
+    bibtotoc,           %
+    parskip,            % parskip-, parskip*, parskip+
+    DIVclassic,
+]{scrreprt}
+
+\pdfcompresslevel=9     % compression level for text and image;
+
+\usepackage[latin1]{inputenc}
+                        % Eingabe von ü,ö,ä,ß erlaubt
+\usepackage[thmmarks]{ntheorem}
+\usepackage[OT2,T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{ngerman,    % neue deutsche Rechtschreibung
+    calc,               % Erweiterung der arithmetischen Funktionen in LaTeX
+    color,              %
+    epigraph,           % Zitat am Kapitelanfang
+    fancybox,           % shadowbox, doublebox, ovalbox, Ovalbox
+    fancyvrb,           % verbatim Erweiterung:
+    float,              %
+    mdwlist,            % compact list: itemize* ..
+    scrdate,            % \todaysname
+    scrtime,            % \thistime
+    scrpage2,           % Kopf- und Fußzeilen flexibel gestalten
+    verbatim,           % Darstellung von "Text, wie er eingegeben wird"
+    tabularx}           % Blocksatzspalten
+\usepackage{listings}
+\usepackage[noend]{algorithmic}
+\usepackage[chapter]{algorithm}
+\usepackage{subfigure}
+\usepackage{textcomp}
+\usepackage{thumbpdf}
+\usepackage[pdftex]{graphicx}
+\usepackage{times}
+\usepackage[bookmarksopen,colorlinks,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{soul}
+\usepackage{psfrag}
+\usepackage[russian,german,ngerman,USenglish]{babel}
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{pdflscape}
+
+
+\definecolor{orange}{rgb}{1.0,0.8,0.4}
+\definecolor{blue}{rgb}{0.2,0.2,0.6}
+\definecolor{black}{rgb}{0.0,0.0,0.0}
+\definecolor{lightgray}{cmyk}{0.0,0.0,0.0,0.06}
+\definecolor{darkgray}{cmyk}{0.0,0.0,0.0,0.5}
+
+\setlength{\topmargin}{-0.5cm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-5mm}
+\setlength{\textwidth}{164mm}
+\setlength{\textheight}{228mm}
+
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}
+\setlength{\parindent}{0cm}\renewcommand{\baselinestretch}{1.0}
+
+\pagestyle{scrheadings} % Standart  Kopf- und Fußzeile
+\setkomafont{pagehead}{\small\scshape}
+
+\setcounter{tocdepth}{3}
+
+\fussy                  % viele Worttrennungen, "schönere" Wortabstände
+
+\graphicspath{{../img/}}
+\usepackage{makeidx}
+\renewcommand{\indexname}{GLOSSARY}
+
+\makeindex
+
+\newcommand{\mylist}{
+  \vspace{-0.2cm}
+  \begin{list}{$\circ$}{
+   %\setlength{\itemindent}{-0.2cm}
+   \setlength{\itemsep}{0pt}
+   \setlength{\parsep}{0pt}
+   \setlength{\topsep}{0pt}
+   \setlength{\partopsep}{0pt}
+   \setlength{\leftmargin}{0.6em}
+   \setlength{\labelwidth}{1em}
+   \setlength{\labelsep}{0.5em}
+  }
+}
+\newcommand{\mylistend}{
+  \end{list}
+  \vspace{-0.3cm}
+  $\;$
+}
+
+
+\newtheorem{Def}{\sc{Definition}}[chapter]
+\newtheorem{The}[Def]{\sc{Theorem}}
+\newtheorem{Lem}[Def]{\sc{Lemma}}
+\newtheorem{Cor}[Def]{\sc{Corollary}}
+\newtheorem{Fac}[Def]{\sc{Fact}}
+\newtheorem{MT}[Def]{\sc{Main Theorem}}
+\newtheorem{Con}[Def]{\sc{Conjecture}}
+
+\theorembodyfont{\rm}
+\theoremstyle{nonumberplain}
+\theoremsymbol{\ensuremath{\Diamond}}\theoremseparator{:}
+\theorembodyfont{\rm}
+\newtheorem{Exa}{\sc{Example}}
+\newtheorem{Rem}{\sc{Remark}}
+
+\theoremsymbol{\ensuremath{\Box}} \theoremseparator{.}
+\theorembodyfont{\rm}
+\newtheorem{Pro}{\sc{Proof}}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\listalgorithmname}{LIST OF ALGORITHMS}
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\renewcommand{\labelitemi}{$\circ$}
+\renewcommand{\labelitemii}{\mathversion{bold}$\cdot$\mathversion{normal}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\floatname{algorithm}{ALGORITHM}
+
+\newcommand{\alg}[1]{\footnotesize\textsf{#1}\normalsize}
+\newcommand{\udl}[1]{\underline{#1}}
+\newcommand{\ve}[1]{\textbf{#1}}
+\newcommand{\ma}[1]{\textbf{#1}}
+\newcommand{\abs}[1]{\ensuremath{\left\vert#1\right\vert}}
+\newcommand{\ggt}[2]{\mbox{\textrm{ggT}$(#1,#2)$}}
+\newcommand{\ointa}[1]{\ensuremath{\oint\hspace{-0.3cm}\int_{\hspace{-0.1cm}
+#1}}}
+\newcommand{\inta}[1]{\ensuremath{\int\hspace{-0.3cm}\int_{\hspace{-0.1cm}
+#1}}}
+\newcommand{\ucirc}[1]{\ensuremath{\stackrel{\;\circ}{#1}}}
+\newcommand{\udcirc}[1]{\ensuremath{\stackrel{\circ\circ}{#1}}}
+\newcommand{\lrline}[0]{\begin{tabular}{l} \hspace{14.4cm}$\;$\\ \hline
+\end{tabular}}
+\newcommand{\bracket}[4]{\ensuremath{\left(\frac{\partial #1}{\partial
+#2}#3\right)_{#4}}}
+\newcommand{\ignore}[1]{\ensuremath{}}
+\newcommand{\nab}[2]{\ensuremath{\frac{\partial ^#1}{\partial #2^#1}}}
+\newcommand{\bra}[1]{\ensuremath{\langle #1|}}
+\newcommand{\ket}[1]{\ensuremath{|#1\rangle}}
+\newcommand{\braket}[2]{\ensuremath{\langle #1|#2\rangle}}
+\newcommand{\braketH}[3]{\ensuremath{\langle #1|#2|#3\rangle}}
+\newcommand{\na}[1]{\textsc{#1}}
+
+\includeonly{
+  metadaten,
+  titel,
+  inhalt,
+  anhang,
+  verzeichnisse
+}
+
+\begin{document}
+\include{metadaten}
+\include{titel}
+\include{inhalt}
+\cleardoublepage
+\begin{appendix}
+\include{anhang}
+\end{appendix}
+\pagenumbering{roman}
+\include{verzeichnisse}
+\end{document}

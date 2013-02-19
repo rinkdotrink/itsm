@@ -1,0 +1,144 @@
+\renewcommand{\listalgorithmname}{LIST OF ALGORITHMS}
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\indexname}{GLOSSARY}
+
+
+%%======================================================================
+%%      Abbildungsverzeichnis
+%%======================================================================
+\markboth{LIST OF FIGURES}{LIST OF FIGURES}
+\listoffigures
+\cleardoublepage
+
+%%======================================================================
+%%      Tabellenverzeichnis
+%%======================================================================
+\markboth{LIST OF TABLES}{LIST OF TABLES}
+\listoftables
+
+\cleardoublepage
+
+%%======================================================================
+%%      Algorithmenverzeichnis
+%%======================================================================
+\renewcommand{\listalgorithmname}{LIST OF ALGORITHMS}
+\markboth{LIST OF ALGORITHMS}{LIST OF ALGORITHMS}
+\listofalgorithms
+
+\cleardoublepage
+
+%%======================================================================
+%%      Listingsverzeichnis
+%%======================================================================
+\renewcommand*\lstlistingname{LIST OF LISTINGS}
+\renewcommand*\lstlistlistingname{LIST OF LISTINGS}
+\lstlistoflistings
+\cleardoublepage
+
+%======================================================================
+%  Abkürzungsverzeichnis
+%======================================================================
+\twocolumn
+\renewcommand{\baselinestretch}{1.0}\normalsize
+
+\chapter*{LIST OF SYMBOLS}
+\addcontentsline{toc}{chapter}{LIST OF SYMBOLS} \markboth{LIST OF SYMBOLS}{LIST OF SYMBOLS}
+
+\section*{Notations}
+
+\begin{tabular}{p{1.5cm}p{12.1cm}}
+$\Box$ & end of a proof\\
+\vspace{-0.22cm}$\Diamond$ & \vspace{-0.22cm}end of an example or a remark \\
+\vspace{-0.22cm}$x$                                    & \vspace{-0.22cm}scalar \\
+\vspace{-0.22cm}$\ve{x}$                               & \vspace{-0.22cm}vector \\
+\vspace{-0.22cm}$\abs{\ve{x}}$                         & \vspace{-0.22cm}norm of vector $\ve{x}$, $\abs{\ve{x}}= \sqrt{\ve{x}\ve{x}}$\\
+\vspace{-0.22cm}$\abs{\mathcal{S}}$                    & \vspace{-0.22cm}number of elements in a set $\mathcal{S}$\\
+\vspace{-0.22cm}$\ve{x}\ve{y}$                         & \vspace{-0.22cm}scaler product of the vectors $\ve{x}$ and $\ve{y}$ \\
+\vspace{-0.22cm}$\bs{X}$                               & \vspace{-0.22cm}matrix \\
+\vspace{-0.22cm}$\bs{X}^{\mathrm{tr}}$                 & \vspace{-0.22cm}transposed matrix \\
+\vspace{-0.22cm}\footnotesize\textsf{procedure}\normalsize() & \vspace{-0.22cm}some procedure in an algorithm\\
+\vspace{-0.22cm}\footnotesize\textsf{\emph{data}}\normalsize & \vspace{-0.22cm}some data structure used in algorithms
+\end{tabular}
+
+\section*{Greek Symbols}
+
+\begin{tabular}{p{1.5cm}p{5.1cm}}
+$\alpha$ & state in the state space\\
+\vspace{-0.22cm}$\bs{\alpha}$ & \vspace{-0.22cm}generalized state\\
+\vspace{-0.22cm}$\beta$ & \vspace{-0.22cm}state in the state space\\
+\vspace{-0.22cm}$\bs{\beta}$ & \vspace{-0.22cm}generalized state\\
+\vspace{-0.22cm}$\Gamma^t_{\bs{\alpha}\bs{\beta}}$ & \vspace{-0.22cm}transition probability from population $\bs{\beta}$ to $\bs{\alpha}$ at time $t$
+\end{tabular}
+
+\section*{Latin Symbols}
+
+\begin{tabular}{p{1.5cm}p{5.1cm}}
+$a_i$ & a certain constant\\
+\vspace{-0.22cm}$A(I)$ & \vspace{-0.22cm}algorithm $A$ started with instance $I$
+\end{tabular}
+
+\cleardoublepage
+
+%======================================================================
+%  Abkürzungsverzeichnis
+%======================================================================
+\onecolumn
+\renewcommand{\baselinestretch}{1.2}\normalsize
+
+\chapter*{LIST OF ABBREVIATIONS}
+\addcontentsline{toc}{chapter}{LIST OF ABBREVIATIONS}
+\markboth{LIST OF ABBREVIATIONS}{LIST OF ABBREVIATIONS}
+\vspace{-0.5cm}
+\begin{tabular}{p{3cm}p{12.2cm}}
+ACO & \udl{A}nt \udl{C}olony \udl{O}ptimization\\
+AJAX & \udl{A}synchronous \udl{Ja}vaScript and \udl{X}ML\\
+B2B & \udl{B}usiness-\udl{to}-\udl{B}usiness
+\end{tabular}
+
+\cleardoublepage
+
+%======================================================================
+%  Glossar
+%======================================================================
+\renewcommand{\baselinestretch}{1.1}\normalsize
+
+\markboth{GLOSSARY}{GLOSSARY}
+\printindex
+\cleardoublepage
+
+%======================================================================
+%   Literaturverzeichnis
+%======================================================================
+\renewcommand{\baselinestretch}{1.13}\normalsize
+\markboth{BIBLIOGRAPHY}{BIBLIOGRAPHY}
+\renewcommand{\bibname}{BIBLIOGRAPHY}
+\bibliographystyle{plain}
+\bibliography{literatur}
+\cleardoublepage
+
+%%======================================================================
+%%      Ende
+%%======================================================================
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%======================================================================
+%   Selbstständigkeitserklärung
+%======================================================================
+\selectlanguage{ngerman}
+\chapter*{Selbstständigkeitserklärung}
+\thispagestyle{empty} Hiermit erkläre ich, dass ich die vorliegende
+Arbeit selbstständig angefertigt, nicht anderweitig zu
+Prüfungszwecken vorgelegt und keine anderen als die angegebenen
+Hilfsmittel verwendet habe. Sämtliche wissentlich verwendete
+Textausschnitte, Zitate oder Inhalte anderer Verfasser
+wurden ausdrücklich als solche gekennzeichnet.\\[2ex]
+\dcplace, den DD.MM.20JJ\\[6ex]
+\flushleft
+\newlength\us
+\settowidth{\us}{-\dcauthorsurname~\dcauthorname-}
+\begin{tabular}{p{\us}}\hline
+\centering\footnotesize \dcauthorsurname,$\,$\dcauthorname
+\end{tabular}
