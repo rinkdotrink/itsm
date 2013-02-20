@@ -47,9 +47,55 @@ play virtual maschine.
 
 Die virtuelle Maschine wird gestartet. CentOS wird gebootet und Nagios gestartet.
 
-Auf Nagios XI kann jetzt im Browser zugegriffen werde unter:
 
-http://192.168.0.100/
+
+Als nächstes wird ein sicheres Kennwort vergeben. Damit kann auf Nagios XI über das Web Interface zugegriffen werden.
+
+Dazu meldet man sich auf der virtuellen Maschine mit dem Root-Kennwort an.
+
+Username: root
+
+Password: nagiosxi
+
+Als nächstes wird mit 
+
+passwd
+
+ein neues Root Kennwort vergeben. Im folgenden wird es auf 111sonoma222 geändert.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.6\textwidth]{ingo/bilder/virtuelleMaschine}
+\caption{Nagios auf der virtuellen Maschine}
+\label{fig:NagiosAufDerVirtuellenMaschine}
+\end{figure}
+
+Als nächstes wird das MySQL Root Kennwort geändert werden. Dazu wird der mysqladmin verwendet. Das Kennwort wird auf 111sonoma222 gesetzt
+
+mysqladmin -u root -p'nagiosxi' password 111sonoma222
+
+Als nächstes sollte das MySQL Backup Script angepasst werden. Es wird im Backup Script das neue Kennwort 111sonoma222 angegeben.
+Das Backup Script wird mit folgendem Befehl editiert.
+
+nano /root/scripts/automysqlbackup
+
+In diesem Script ist die Zeile 
+
+PASSWORD=nagiosxi
+
+zu ändern in
+
+PASSWORD=111sonoma222
+
+Um die IP Adresse der virtuellen Maschine zu bekommen, wird folgender Befehl eingeben:
+
+ifconfig
+
+Hier steht unter eth0 $\rightarrow$ inet addr: 192.168.0.100
+
+Mit dieser IP-Adresse kann auf des Web-Interface von Nagios XI zugegriffen werden.
+
+In Abbildung \ref{fig:StartseiteVonNagios} auf Seite \pageref{fig:StartseiteVonNagios} ist die Starteseite von Nagios XI zu sehen.
 
 \begin{figure}[htp]
 \centering
@@ -58,7 +104,33 @@ http://192.168.0.100/
 \label{fig:StartseiteVonNagios}
 \end{figure}
 
-Das Default Root Passwort ist nagiosxi
+Auf dem Web-Interface von Nagios kann auf Access Nagios XI geklickt werden, um Nagios XI einzustellen. Die Abbildung \ref{fig:NagiosXiEinstellen} auf Seite \pageref{fig:NagiosXiEinstellen} zeigt, dass an dieser Stelle folgende Punkte bearbeitet werden können:
+
+\begin{itemize}
+ \item die Prgramm URL, auf die die Nutzer auf Nagios zugreifen
+ \item der Administratorname
+ \item die EMail-Adresse des Administrators
+ \item das Administrator-Kennwort
+\end{itemize}
+
+Nach einem Klick auf Install ist die Installation von Nagios XI fertig.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.6\textwidth]{ingo/bilder/NagiosInstall}
+\caption{Nagios XI einstellen}
+\label{fig:NagiosXiEinstellen}
+\end{figure}
+
+Leider kommt danach folgende Fehlermeldung, wie in Abbildung \ref{fig:NagiosXiFehlermeldung} auf Seite \pageref{fig:NagiosXiFehlermeldung} zu sehen. Über das Web-Interface kann nicht mehr auf Nagios zugegriffen werden.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.6\textwidth]{ingo/bilder/NagiosFehler}
+\caption{Nagios XI Fehlermeldung}
+\label{fig:NagiosXiFehlermeldung}
+\end{figure}
+
 
 
 How old is the software? When did its development start? 
