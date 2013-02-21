@@ -1,67 +1,36 @@
-Please describe the basic characteristics of the software. 
+Bei Nagios XI handelt es sich um eine webbasierte Anwendung. Die Software Nagios XI ist sowohl auf dem eigenen Server installierbar, als auch als SaaS. Die SaaS-Lösung ``Security Performance Availability Engine - SPAE'' die auf Nagios basiert, wird z.B. vom Unternehmen SHALB angeboten unter
 
-Is is a web-based solution?
+\url{http://shalb.com/en/}
 
-Ja
-
-Is it installable or just available as a service? 
-
-Die Software ist installierbar.
-
-
-
-How much effort does the installation take (describe and give a time for the installation)?
-
-Die folgenden Schritte werden auf folgendem Testrechner ausgeführt:
-
-Ubuntu 12.04
+Im folgenden werden die Installationsschritte, die nötig sind, um Nagios XI auf einem eigenen Server zu installieren, beschrieben. Die folgenden Schritte werden dabei auf einem Testrechner mit Ubuntu 12.04 ausgeführt.
 
 Es wird die Free Trial Version von Nagios XI heruntergeladen unter:
 
-http://www.nagios.com/products/nagiosxi
+\url{http://www.nagios.com/products/nagiosxi}
 
 Die Trial Version ist eine 60 Tage Testversion von Nagios XI.
 
 Es wird die VMware Virtual Machine (64-bit) Version 2012R1.6 heruntergeladen unter:
 
-http://library.nagios.com/library/products/nagiosxi/downloads/main
+\url{http://library.nagios.com/library/products/nagiosxi/downloads/main}
 
-Auf der viruellen Maschine läuft CentOS 6.x und Nagios XI 2012 ist installiert.
+Auf der viruellen Maschine ist Nagios XI 2012 und die Linux-Distribution CentOS 6.x vorinstalliert.
 
-Um die VMware Virtual Machine starten zu können, muss VMware installiert werden.
-VMware kann kostenfrei heruntergeladen werden unter:
+Um die VMware Virtual Machine starten zu können, muss VMware installiert werden. VMware kann kostenfrei heruntergeladen werden unter:
 
 \url{https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0}
 
 Der heruntergeladene VMware-Player wird installiert mit:
 
+\begin{verbatim}
 sudo sh VMware-Player-5.0.1-894247.x86\_64.bundle
+\end{verbatim}
 
-Der VMware-Player wird gestartet und es wird die virtuelle Maschine ausgewählt mit 
+Der VMware-Player wird gestartet und es wird die virtuelle Maschine ausgewählt mit ``Open a virtual Maschine''.
 
-Open a virtual Maschine.
+Die ausgewählte virtuelle Maschine wird gestartet mit ``play virtual maschine''.
 
-Die ausgewählte virtuelle Maschine wird gestartet mit 
-
-play virtual maschine.
-
-Die virtuelle Maschine wird gestartet. CentOS wird gebootet und Nagios gestartet.
-
-
-
-Als nächstes wird ein sicheres Kennwort vergeben. Damit kann auf Nagios XI über das Web Interface zugegriffen werden.
-
-Dazu meldet man sich auf der virtuellen Maschine mit dem Root-Kennwort an.
-
-Username: root
-
-Password: nagiosxi
-
-Als nächstes wird mit 
-
-passwd
-
-ein neues Root Kennwort vergeben. Im folgenden wird es auf 111sonoma222 geändert.
+Die virtuelle Maschine wird ausgeführt, d.h. CentOS wird gebootet und Nagios gestartet. In Abbildung \ref{fig:NagiosAufDerVirtuellenMaschine} auf Seite \pageref{fig:NagiosAufDerVirtuellenMaschine} ist Nagios auf der virtuellen Maschine zu sehen.
 
 \begin{figure}[htp]
 \centering
@@ -70,28 +39,57 @@ ein neues Root Kennwort vergeben. Im folgenden wird es auf 111sonoma222 geändert
 \label{fig:NagiosAufDerVirtuellenMaschine}
 \end{figure}
 
+Als nächstes wird ein sicheres Kennwort vergeben. Damit kann auf Nagios XI über das Web Interface zugegriffen werden.
+
+Dazu meldet man sich auf der virtuellen Maschine mit dem Root-Kennwort an.
+
+\begin{verbatim}
+Username: root
+Password: nagiosxi
+\end{verbatim}
+
+Als nächstes wird mit dem Befehl
+
+\begin{verbatim}
+passwd
+\end{verbatim}
+
+ein neues Root Kennwort vergeben. Im folgenden wird es auf 111sonoma222 geändert.
+
 Als nächstes wird das MySQL Root Kennwort geändert werden. Dazu wird der mysqladmin verwendet. Das Kennwort wird auf 111sonoma222 gesetzt
 
+\begin{verbatim}
 mysqladmin -u root -p'nagiosxi' password 111sonoma222
+\end{verbatim}
 
 Als nächstes sollte das MySQL Backup Script angepasst werden. Es wird im Backup Script das neue Kennwort 111sonoma222 angegeben.
-Das Backup Script wird mit folgendem Befehl editiert.
+Das Backup Script wird mit folgendem Befehl editiert:
 
+\begin{verbatim}
 nano /root/scripts/automysqlbackup
+\end{verbatim}
 
 In diesem Script ist die Zeile 
 
+\begin{verbatim}
 PASSWORD=nagiosxi
+\end{verbatim}
 
 zu ändern in
 
+\begin{verbatim}
 PASSWORD=111sonoma222
+\end{verbatim}
 
-Um die IP Adresse der virtuellen Maschine zu bekommen, wird folgender Befehl eingeben:
+Um die IP Adresse der virtuellen Maschine herauszufinden, wird folgender Befehl eingegeben:
 
+\begin{verbatim}
 ifconfig
+\end{verbatim}
 
-Hier steht unter eth0 $\rightarrow$ inet addr: 192.168.0.100
+Hier steht unter eth0 $\rightarrow$ inet addr folgende IP-Adresse:
+
+192.168.0.100
 
 Mit dieser IP-Adresse kann auf des Web-Interface von Nagios XI zugegriffen werden.
 
@@ -107,13 +105,13 @@ In Abbildung \ref{fig:StartseiteVonNagios} auf Seite \pageref{fig:StartseiteVonN
 Auf dem Web-Interface von Nagios kann auf Access Nagios XI geklickt werden, um Nagios XI einzustellen. Die Abbildung \ref{fig:NagiosXiEinstellen} auf Seite \pageref{fig:NagiosXiEinstellen} zeigt, dass an dieser Stelle folgende Punkte bearbeitet werden können:
 
 \begin{itemize}
- \item die Prgramm URL, auf die die Nutzer auf Nagios zugreifen
- \item der Administratorname
+ \item die Prgramm URL, auf die die Nutzer auf Nagios zugreifen,
+ \item der Administratorname,
  \item die EMail-Adresse des Administrators
- \item das Administrator-Kennwort
+ \item und das Administrator-Kennwort.
 \end{itemize}
 
-Nach einem Klick auf Install ist die Installation von Nagios XI fertig.
+Nach einem Klick auf Install sollte die Installation von Nagios XI abgeschlossen sein.
 
 \begin{figure}[htp]
 \centering
@@ -122,7 +120,7 @@ Nach einem Klick auf Install ist die Installation von Nagios XI fertig.
 \label{fig:NagiosXiEinstellen}
 \end{figure}
 
-Leider kommt danach folgende Fehlermeldung, wie in Abbildung \ref{fig:NagiosXiFehlermeldung} auf Seite \pageref{fig:NagiosXiFehlermeldung} zu sehen. Über das Web-Interface kann nicht mehr auf Nagios zugegriffen werden.
+Leider kommt nach dem Klick auf Install eine Fehlermeldung. Diese Fehlermeldung ist in Abbildung \ref{fig:NagiosXiFehlermeldung} auf Seite \pageref{fig:NagiosXiFehlermeldung} zu sehen. Nach dem Klick auf Install kann nicht mehr auf das Web-Interface von Nagios XI zugegriffen werden.
 
 \begin{figure}[htp]
 \centering
@@ -131,23 +129,13 @@ Leider kommt danach folgende Fehlermeldung, wie in Abbildung \ref{fig:NagiosXiFe
 \label{fig:NagiosXiFehlermeldung}
 \end{figure}
 
+Der Zeitaufwand für die Installation von Nagios XI beträgt ca. eine Stunde.
 
-
-How old is the software? When did its development start? 
-
-1999 veröffentlichte Ethan Galstad Nagios - dass damals noch NetSaint hieß - als Open Source Projekt.
-http://www.nagios.org/about/history
-
-Which version is it (0.1?)? 
-
-Netsaint 0.0.1
+Die Software Nagios - dass damals noch NetSaint hieß - wurde 1999 von Ethan Galstad als Open Source Projekt in der Version Netsaint 0.0.1 veröffentlicht.
+\url{http://www.nagios.org/about/history}
 \url{http://www.ussrback.com/UNIX/audit/netsaint/index.html}
 
-Is it well established? How many customers are using it? 
-
 Es wird geschätzt, dass es weltweit ca 1 Million Nagios Nutzer gibt.
-http://www.nagios.org/about/community
+\url{http://www.nagios.org/about/community}
 
-Is it still further developed - are new releases planned and when was the last release?
-
-Es wird immernoch weiterentwickelt. Neue Releases sind geplant. Die letzte Version 2012R1.6 ist von 15. Februar 2013.
+Nagios wird immernoch weiterentwickelt. Neue Releases sind geplant. Die letzte Version 2012R1.6 ist von 15. Februar 2013.
