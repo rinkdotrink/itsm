@@ -1,12 +1,12 @@
-\BOOKMARK [0][]{chapter.1}{INTRODUCTION}{}% 1
-\BOOKMARK [0][]{chapter.2}{Evaluation of General Characteristics of the Software}{}% 2
-\BOOKMARK [1][]{section.2.1}{Basis facts about the software solution}{chapter.2}% 3
-\BOOKMARK [1][]{section.2.2}{Versions and price}{chapter.2}% 4
+\BOOKMARK [0][]{chapter.1}{Einf\374hrung}{}% 1
+\BOOKMARK [0][]{chapter.2}{Auswertung der Allgemeine Merkmale der Software}{}% 2
+\BOOKMARK [1][]{section.2.1}{Grundlegende Fakten \374ber die Software-L\366sung Nagios XI}{chapter.2}% 3
+\BOOKMARK [1][]{section.2.2}{Versionen und Preise}{chapter.2}% 4
 \BOOKMARK [1][]{section.2.3}{Usability}{chapter.2}% 5
 \BOOKMARK [1][]{section.2.4}{Performance}{chapter.2}% 6
-\BOOKMARK [1][]{section.2.5}{Documentation}{chapter.2}% 7
+\BOOKMARK [1][]{section.2.5}{Dokumentation}{chapter.2}% 7
 \BOOKMARK [1][]{section.2.6}{Support}{chapter.2}% 8
-\BOOKMARK [1][]{section.2.7}{Errors and Bugs}{chapter.2}% 9
+\BOOKMARK [1][]{section.2.7}{Fehler und Bugs}{chapter.2}% 9
 \BOOKMARK [0][]{chapter.3}{Evaluation of the ITSM Specific Functionalities}{}% 10
 \BOOKMARK [1][]{section.3.1}{ITSM Processes}{chapter.3}% 11
 \BOOKMARK [1][]{section.3.2}{IT Service Management Roles}{chapter.3}% 12
@@ -22,8 +22,9 @@
 \BOOKMARK [2][]{subsection.3.3.7}{Definite Media Library}{section.3.3}% 22
 \BOOKMARK [2][]{subsection.3.3.8}{Knowledge Management}{section.3.3}% 23
 \BOOKMARK [2][]{subsection.3.3.9}{Event, Incident and Problem Management}{section.3.3}% 24
-\BOOKMARK [0][]{chapter.4}{Conclusion}{}% 25
-\BOOKMARK [0][]{appendix.A}{This is the First Appendix Chapter}{}% 26
-\BOOKMARK [1][]{section.A.1}{Appendix Section}{appendix.A}% 27
-\BOOKMARK [0][]{appendix.B}{This is the Second Appendix Chapter}{}% 28
-\BOOKMARK [1][]{section.B.1}{Another Appendix Section}{appendix.B}% 29
+\BOOKMARK [2][]{subsection.3.3.10}{Fehler bei der Installation}{section.3.3}% 25
+\BOOKMARK [0][]{chapter.4}{Zusammenfassung}{}% 26
+\BOOKMARK [0][]{appendix.A}{This is the First Appendix Chapter}{}% 27
+\BOOKMARK [1][]{section.A.1}{Appendix Section}{appendix.A}% 28
+\BOOKMARK [0][]{appendix.B}{This is the Second Appendix Chapter}{}% 29
+\BOOKMARK [1][]{section.B.1}{Another Appendix Section}{appendix.B}% 30

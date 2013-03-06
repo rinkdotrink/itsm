@@ -104,6 +104,22 @@ Alle Events können in einer Event-Datenbank(EventDB) gesammelt werden. Die Event
 \end{enumerate}
 Für die Checks werden externe Programme(Plugins) verwendet. Nagios kann damit alles prüfen was sich elektronisch messen lässt. Lediglich müssen die Messdaten als eine vom Computer verwertbare Information bereitgestellt werden mit Hilfe von Sensoren und anderen Messgeräten.\\
 
+\subsection{Fehler bei der Installation}
+\label{sec:fehlerInstallation}
+Um Nagios XI auf Windows zu installieren, wird entweder die virtuelle Maschine von VMware oder der virtuelle PC von Microsoft benötigt: 
+\begin{enumerate}
+\item VMware Virtual Machine \\
+Nach der Installation von VMware Virtual Machine und dem Herunterladen sowie Entpacken der entsprechenden Datei von der Nagios-Webseite, wird mit einem Doppelklick auf die Konfigurationsdatei nagiosxi(VMware virtual machine configuration) der VMware Player gestartet und das CentOS gebootet. Der Benutzer wird aufgefordert sich einzuloggen. Man verwendet hierbei das Root-Kennwort(localhost login: root Password: nagiosxi). Mit \textit{ifconfig} findet man die IP-Adresse der VM heraus. Dadurch soll es möglich sein mit dem Browser auf das Web-Interface von Nagios XI zuzugreifen. Nach ca. einer Minute öffnet sich die Startseite und mit einem Klick auf den Link "Access Nagios XI" sollte der Benutzer weitergeleitet werden zum eigentlichen Web-Interface. Leider erscheint nach kurzer Zeit die folgende Fehlermeldung: "Diese Webseite ist nicht verfügbar." Bei einem zweiten Versuch kommt man überhaupt nicht mehr auf die Startseite.
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.6\textwidth]{Christof/Bilder/AccessNagios1}
+\caption{Startseite}
+\label{fig:Startseite}
+\end{figure}
+\item Microsoft Virtual Machine \\
+Nach der Installation des Windows Virtual PC und dem Herunterladen sowie Entpacken der entsprechenden Datei von der Nagios-Webseite, wird mit einem Doppelklick auf die Konfigurationsdatei nagiosxi(Virtual Machine Settings File) der Windows Virtual PC gestartet und es wird das CentOS gebootet. Leider kommt es hier schon beim Booten zu Fehlern und man gelangt nicht zu der Startseite vom Web-Interface.
+\end{enumerate}
+Im Internet konnte leider auch keine passende Lösung zu diesen beiden Problemen gefunden werden. Somit war es nicht möglich die Software ausgiebig zu testen, da man nur die Demo-Version auf der Webseite von Nagios zur Verfügung hatte, diese aber den Aufruf vieler Funktionen nicht erlaubt.
 
 \chapter{Zusammenfassung}
 \input{zusammenfassung}

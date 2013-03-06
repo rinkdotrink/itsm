@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2012.7.9)  6 MAR 2013 18:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2012.7.9)  6 MAR 2013 20:04
 entering extended mode
 **C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/hauptdatei.tex
 (C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/hauptdatei.tex
@@ -837,11 +837,8 @@ LaTeX Warning: Unused global option(s):
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\hauptdatei.aux
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\metadaten.aux)
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\titel.aux)
-(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\inhalt.aux
-
-LaTeX Warning: Label `fig:NagiosXiFehlermeldung' multiply defined.
-
-) (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\anhang.aux))
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\inhalt.aux)
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\anhang.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
 LaTeX Font Info:    ... okay on input line 181.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
@@ -955,7 +952,7 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 101.
 
-<Images/HSZiGr.jpg, id=119, 361.35pt x 30.8352pt>
+<Images/HSZiGr.jpg, id=123, 361.35pt x 30.8352pt>
 File: Images/HSZiGr.jpg Graphic file (type jpg)
  <use Images/HSZiGr.jpg>
 Package pdftex.def Info: Images/HSZiGr.jpg used on input line 101.
@@ -1033,25 +1030,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--101
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+
+ []
+
 [4
 
 ]
-Overfull \hbox (1.08264pt too wide) in paragraph at lines 114--115
+Overfull \hbox (1.08264pt too wide) in paragraph at lines 118--119
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
 
-Overfull \hbox (1.08264pt too wide) in paragraph at lines 121--123
+Overfull \hbox (1.08264pt too wide) in paragraph at lines 125--127
 []$ 
  []
 
@@ -1059,31 +1066,8 @@ Overfull \hbox (1.08264pt too wide) in paragraph at lines 121--123
 
 
 ]
-Overfull \hbox (1.08264pt too wide) in paragraph at lines 143--144
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
-
- []
-
-
-Overfull \hbox (1.08264pt too wide) in paragraph at lines 150--152
-[]$ 
- []
-
-[7] [8
-
-
-]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 166.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
  (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\hauptdatei.toc)
 \tf@toc=\write8
 ) [1
@@ -1100,19 +1084,28 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/Introduction.tex
+Overfull \hbox (1.10248pt too wide) in paragraph at lines 15--16
+[]\T1/ptm/m/n/10.95 In der Ser-vice De-sig Phase wer-den u.a. neue IT Ser-vices
+ ent-wor-fen, bzw. vorhan-dene Ser-vices verbessert. 
+ []
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 \chapter
-             {Evaluation of General Characteristics of the Software} [1
+l.15 \chapter
+             {Auswertung der Allgemeine Merkmale der Software} [1
 
 
 
 ]
 Chapter 2.
+
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/EvaluationOfGeneralCharacteristic
+sOfTheSoftware.tex)
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 18.
 
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/BasisFactsAboutTheSoftwareSolutio
 n.tex
@@ -1125,28 +1118,29 @@ Overfull \hbox (6.41425pt too wide) in paragraph at lines 21--22
 desktop _ end _ user _ computing / vmware _
  []
 
-<ingo/bilder/virtuelleMaschine.png, id=203, 735.74875pt x 457.71pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 D
+      ie ausgewählte virtuelle Maschine wird gestartet mit ``play virtual ma...
+[2
+
+] <ingo/bilder/virtuelleMaschine.png, id=206, 735.74875pt x 457.71pt>
 File: ingo/bilder/virtuelleMaschine.png Graphic file (type png)
 
 <use ingo/bilder/virtuelleMaschine.png>
 Package pdftex.def Info: ingo/bilder/virtuelleMaschine.png used on input line 3
 7.
 (pdftex.def)             Requested size: 279.97795pt x 174.17606pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 
-      [2
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.80 \begin{verbatim}
+l.74 \begin{verbatim}
                       [3 <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/ingo/bilder/v
 irtuelleMaschine.png>]
-<ingo/bilder/Startseite.png, id=217, 592.2125pt x 381.425pt>
+<ingo/bilder/Startseite.png, id=215, 592.2125pt x 381.425pt>
 File: ingo/bilder/Startseite.png Graphic file (type png)
 
 <use ingo/bilder/Startseite.png>
@@ -1158,33 +1152,31 @@ Overfull \hbox (0.76953pt too wide) in paragraph at lines 105--106
 XI gek-lickt wer-den, um Na-gios XI einzustellen.
  []
 
-<ingo/bilder/NagiosInstall.png, id=220, 553.06625pt x 436.63126pt>
+<ingo/bilder/NagiosInstall.png, id=218, 553.06625pt x 436.63126pt>
 File: ingo/bilder/NagiosInstall.png Graphic file (type png)
 
 <use ingo/bilder/NagiosInstall.png>
 Package pdftex.def Info: ingo/bilder/NagiosInstall.png used on input line 118.
 (pdftex.def)             Requested size: 279.97795pt x 221.03337pt.
-
-<ingo/bilder/NagiosFehler.png, id=223, 1096.095pt x 506.89375pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 
+       [4 <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/ingo/bilder/Startseite.png>]
+<ingo/bilder/NagiosFehler.png, id=227, 1096.095pt x 506.89375pt>
 File: ingo/bilder/NagiosFehler.png Graphic file (type png)
 
 <use ingo/bilder/NagiosFehler.png>
 Package pdftex.def Info: ingo/bilder/NagiosFehler.png used on input line 127.
 (pdftex.def)             Requested size: 279.97795pt x 129.47662pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \end{figure}
-                   [4 <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/ingo/bilder/Star
-tseite.png>])pdfTeX warning (ext4): destination with the same identifier (name{
-page.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.23 \section
-             {Versions and price} [5 <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/i
-ngo/bilder/NagiosInstall.png> <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/ingo/bil
-der/NagiosFehler.png>]
+l.140 
+       [5 <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/ingo/bilder/NagiosInstall.pn
+g> <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/ingo/bilder/NagiosFehler.png>])
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/VersionsAndPrice.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1197,12 +1189,7 @@ l.48 N
 [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.81 U
-      nter [7]
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 100--100
 []|\T1/ptm/m/n/10.95 Stan-
  []
@@ -1255,12 +1242,7 @@ Overfull \hbox (20.25398pt too wide) in paragraph at lines 99--136
 
 Underfull \vbox (badness 4254) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.137 \begin{tabular}
-                     {p{3cm}|p{1cm}|p{1cm}|p{10cm}} [8]
+ [8]
 Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\T1/ptm/m/n/10.95 Stan-
  []
@@ -1298,18 +1280,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/Performance.tex)
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/Dokumentation.tex [11])
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/Support.tex [12])
-(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/ErrorsAndBugs.tex
-Overfull \hbox (210.8319pt too wide) in paragraph at lines 3--4
-[][][]$\T1/pcr/m/n/10.95 http : / / library . nagios . com / library / products
- / nagiosxi / tutorials / 244-[]nagios-[]xi-[]web-[]interface-[]setup-[]guide$[
-][] 
- []
-
-File: ingo/bilder/NagiosFehler.png Graphic file (type png)
-<use ingo/bilder/NagiosFehler.png>
-Package pdftex.def Info: ingo/bilder/NagiosFehler.png used on input line 9.
-(pdftex.def)             Requested size: 279.97795pt x 129.47662pt.
-) [13] [14]
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\ingo/ErrorsAndBugs.tex) [13]
 Chapter 3.
 (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/Itsmprocess.tex
 Overfull \hbox (0.61157pt too wide) in paragraph at lines 6--44
@@ -1319,47 +1290,63 @@ Overfull \hbox (0.61157pt too wide) in paragraph at lines 6--44
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/Roles.tex [15
+) (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/Roles.tex [14
 
 ]
 
-LaTeX Warning: Text page 16 contains only floats.
+LaTeX Warning: Text page 15 contains only floats.
 
-[16] <Christof/Bilder/Security.jpg, id=304, 336.50719pt x 152.82094pt>
+[15] <Christof/Bilder/Security.jpg, id=297, 336.50719pt x 152.82094pt>
 File: Christof/Bilder/Security.jpg Graphic file (type jpg)
 
 <use Christof/Bilder/Security.jpg>
 Package pdftex.def Info: Christof/Bilder/Security.jpg used on input line 37.
 (pdftex.def)             Requested size: 279.97795pt x 127.14912pt.
 )
-(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/EmailService.tex) [17 <C:/Use
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/EmailService.tex) [16 <C:/Use
 rs/Syzyryk/itsmNagios/itsm/Beleg2/Christof/Bilder/Security.jpg>]
-(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/ItilRoles.tex) [18]
-Overfull \hbox (8.80779pt too wide) in paragraph at lines 98--105
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\christof/ItilRoles.tex) [17]
+Overfull \hbox (8.80779pt too wide) in paragraph at lines 96--103
 \T1/ptm/m/n/10.95 asyn-chrone Nachrichten, die ein SNMP-Agent(Dienst) an eine z
 en-trale Management-Einheit versendet.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[19]
+[18] <Christof/Bilder/AccessNagios1.jpg, id=316, 475.02469pt x 369.63094pt>
+File: Christof/Bilder/AccessNagios1.jpg Graphic file (type jpg)
+
+<use Christof/Bilder/AccessNagios1.jpg>
+Package pdftex.def Info: Christof/Bilder/AccessNagios1.jpg used on input line 1
+15.
+(pdftex.def)             Requested size: 279.97795pt x 217.86603pt.
+
+Overfull \hbox (12.99039pt too wide) in paragraph at lines 119--121
+\T1/ptm/m/n/10.95 Nach der In-stal-la-tion des Win-dows Vir-tual PC und dem Her
+un-ter-laden sowie Ent-packen der entsprechen-
+ []
+
+[19 <C:/Users/Syzyryk/itsmNagios/itsm/Beleg2/Christof/Bilder/AccessNagios1.jpg>
+] [20]
 Chapter 4.
-) [20
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\zusammenfassung.tex)) [21
 
-] (C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\anhang.tex
-Appendix A.
-[21
-
-
+] [22
 
 
 
 ]
+(C:\Users\Syzyryk\itsmNagios\itsm\Beleg2\anhang.tex
+Appendix A.
+[23
+
+
+]
 Appendix B.
-) [22
+) [24
 
 ]
 \tf@thm=\write9
@@ -1373,21 +1360,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `hauptdatei.out' has not changed.
-(rerunfilecheck)             Checksum: F4E658364A090D9FE90E7420940EEB08;2017.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 1581A971D3480751C0599276E3967AA8;2122.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 12956 strings out of 493921
- 191408 string characters out of 3144871
- 324774 words of memory out of 3000000
- 15827 multiletter control sequences out of 15000+200000
- 73477 words of font info for 88 fonts, out of 3000000 for 9000
+ 12983 strings out of 493921
+ 192460 string characters out of 3144871
+ 325838 words of memory out of 3000000
+ 15840 multiletter control sequences out of 15000+200000
+ 67115 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 38i,13n,55p,918b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,55p,1024b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
@@ -1399,9 +1382,9 @@ iKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 ype1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
 /times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on hauptdatei.pdf (31 pages, 481724 bytes).
+Output written on hauptdatei.pdf (31 pages, 546561 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
