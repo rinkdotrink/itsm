@@ -41,130 +41,71 @@ Write a few introductory lines.
 \chapter{Evaluation of the ITSM Specific Functionalities}
 
 \section{ITSM Processes}
-\label{sec:itsmprocesses}
+\input{christof/Itsmprocess}
 
-Describe the support of the processes with a number from 1-5 (5 for fully supported), describe also "what" it supported and "what not". Use our scribe notes with detailed information about the processes to have an idea about what could be supported. Give further descriptions "how" it is supported and about the usability of the process features in the column "comments". Describe as many details as possible.
-
-\begin{table}[h!]
-\caption{Supported ITSM Processes}
-\vspace*{0.3cm}
-\begin{tabular}{|p{6.1cm}|p{4.5cm}|p{4.5cm}|}\hline
-\textbf{ITSM Process}             &\textbf{Supported (1-5)}        &\textbf{Comments}\\\hline\hline
-\textbf{Service Strategy}          &                                &\\
-Strategy Generation            &                                &\\
-Demand Management                   &                                &\\
-Service Portfolio Mgmt.                   &                                &\\
-Financial Management                   &                                &\\\hline
-\textbf{Service Design}          &                                &\\
-Service Catalogue Mgmt.                   &                                &\\
-Service Level Management                   &                                &\\
-Capacity Management                   &                                &\\
-Availability Management                   &                                &\\
-IT Service Continuity Mgmt.                   &                                &\\
-Information Security Mgmt.                   &                                &\\
-Supplier Management                   &                                &\\\hline
-\textbf{Service Transition}          &                                &\\
-Transition Planning and Support                   &                                &\\
-Change Management                   &                                &\\
-Service Asset and Configuration Mgmt.                   &                                &\\
-Release and Deployment Mgmt.                   &                                &\\
-Service Validation and Testing                   &                                &\\
-Evaluation                   &                                &\\
-Knowledge Management                   &                                &\\\hline
-\textbf{Service Operation}          &                                &\\
-Event Management                   &                                &\\
-Incident Management                   &                                &\\
-Request Management                   &                                &\\
-Problem Management                   &                                &\\
-Access Management                   &                                &\\\hline
-\textbf{Continual Service Improvement}          &                                &\\
-7-Step Improvement                   &                                &\\
-Service Reporting                   &                                &\\
-Service Measurement                 &                                &\\\hline
-\textbf{General}                   &                                 &\\
-Service Desk                       &                                 &\\
-Raci Authority Matrix                    &                           &\\\hline
-\end{tabular}
-\label{tab:SupportedITSMProcesses}
-\end{table}
 
 \section{IT Service Management Roles}
-\label{sec:ITSMRoles}
-
-Described the support of the ITSM roles individually.
+\input{christof/Roles}
 
 \section{Scenarios}
-\label{sec:scenarios}
-
 \subsection{Design of an Email Service}
-\label{sec:emailServiceDesign}
-
-Design an email service as a new service within the service management software which has to be evaluated. Please consider if supported:
-\begin{itemize}
-\item Creating and formalizing a \emph{Service Design Package} (SDP)
-\item Creating and formalizing \emph{Service Acceptance Criteria} (SAC)
-\item Creating and formalizing \emph{Service Level Requirements} (SLR) which develop to the \emph{Service Level Agreement} (SLA) within the design process.
-\end{itemize}
-
-Lookup all necessary information about the documents in your scribe notes. Are measurable goals for the services supported by the software? How about SLA-Monitoring (SLAM) and Service Improvement Plans? Are different service levels for the same service supported? Are different SLA types supported (service-based, customer based, multi-level)?
-
-Describe how your software supports this procedure. Use also screen shots to visualize that.
+\input{christof/EmailService}
 
 \subsection{ITIL Roles}
-\label{sec:itilRoles}
+\input{christof/ItilRoles}
 
-Check which of the ITIL roles (\url{http://wiki.en.it-processmaps.com/index.php/Roles_within_ITIL_V3}) are supported by your software or how it is possible to define ITIL roles for your service. Then establish as many ITIL roles as possible in your test system.
 
 \subsection{Service Catalogue}
 \label{sec:serviceCatalogue}
-
-Check if the life cycle phases \emph{Service Pipeline}, \emph{Service Catalogue} and \emph{Retired Services} are supported by your software. Add the new Email Service as new service to the service pipeline, then transfer it to the service catalogue and finally retire the service. Is it possible to get information about all services in the life cycle? If yes describe how that works. Which information are available for each service? Is there a division in \emph{business service catalogue} and \emph{technical service catalogue}?
-
-Describe how your software supports this procedure. Use also screen shots to visualize that.
+Nagios verfügt über keinen Service Catalogue, der Informationen zu allen in Betrieb befindlichen und geplanten Services enthält.
 
 \subsection{Further Management of the Email Service}
 \label{sec:furtherManagement}
 
-Note that you need to preserve capacities for your email service. Is there a capacity management information system? If yes then develop a capacity plan and  reserve capacities for your email service. How about planning of personnel resources?
+Nagios hat die Aufgabe, den Administrator schnell und gezielt über Fehlerzustände zu informieren. Der Administrator soll dabei nicht mit Informationen über fehlerfrei laufenden Dienste und Hosts überflutet werden. Die Überwachung wird bei Nagios mit Plugins durchgeführt, die lokal auf dem Nagios-Server oder auch auf den zu überwachenden Hosts installiert werden können. Dadurch kann Nagios leicht um weitere Plugins erweitert werden. Die von Plugins gelieferten Performancedaten können ausgewertet und dargestellt werden.  
 
-Also develop an availability plan for your email service if this is supported by the software. Is the ITIL role of the Availability Manager supported?
-
-Is it supported by the software to plan capacities and availability in an alternating way?
-
-How about a continuity plan for your Email service - is it possible to establish that in the software? Develop an exemplary continuity plan for the email service.
-
-How is information security management and supplier management supported. If supplier management is supported, add exemplary suppliers with underpinning contracts for basis functionality of your email service - e.g. use cloud services to store the emails or your service. Safe the contract in the supplier and contract data base if available (SCD - Supplier and Contract Database).
+Es gibt keinen Capacity Management Information System und somit kann man mit Nagios auch keinen Capacity Plan erstellen. Die Rolle des Availability Managers als auch das Security Management und Supplier Management werden ebenfalls nicht unterstützt.
 
 \subsection{Configuration Management}
 \label{sec:configurationManagement}
 
-Add all necessary configuration items to implement your email service as configuration items in the Configuration Management Database (CMDB) of the system. Note that it is normal to have thousands if not millions of configuration items within the system. This is of course not the case in our test system but consider adding different CI-types as necessary infrastructure and servers, routers, documents, chairs, IP-adresses, other hardware and services, buildings, persons, etc. Add for each of the items a configuration record with all describing information. Are agents supported, which write infrastructure automatically in the CMDB? Is a CMS available to host the CMDB?
+Configuration Management wird nicht unterstützt.
 
 \subsection{Change Management}
 \label{sec:changeManagement}
 
-Simulate all three types of changes which you know from the lecture. Rise a RFC (request for change) first. Then initiate a normal change to your service, e.g. migrating the email service to a new server. Also increase the storage capacity of your email service from the initial value of $x$ MB to $y$ MB. Since this change is not very risky, establish it as \emph{standard change}. Define the CAB (Change Advisory Board) and a ECAB (Emergency Change Advisory Board). Simulate the situation that your email system got hacked - how is the handling of that situation supported by your software?
-
-Now think about developing your email service further, e.g. by adding IMAP or POP or by adding a web interface. Plan those changes in a \emph{Forward Schedule of Changes} (FSC) if available. Are the 7Rs supported somehow to make sure that the right questions are asked before the change is realized?
+Change Management wird nicht unterstützt.
 
 \subsection{Definite Media Library}
 \label{sec:definiteMediaLibrary}
 
-Is there a \emph{Definite Media Library} (DML) to represent media CIs in different versions? All media items should also be available as CI in the CMDB. Think about which software you need to realize your email service and create configuration items with Master copies of this software which are also represented in the DML.
+Nagios enthält keine Definitive Media Library, in der die Medien-CIs aufbewahrt werden und abgesichert werden.
 
 \subsection{Knowledge Management}
 \label{sec:knowledgeManagement}
 
-Consider to safe further information about your email service, as current users, status information about the service utilization, down times, etc. Safe those information to the \emph{Service Knowledge Management System} (SKMS) if possible. Is it supported to safe status information about the service automatically?
+Nagios unterstützt kein Knowledge Management.
 
 \subsection{Event, Incident and Problem Management}
 \label{sec:eventIncidentProblemManagement}
 
-Since we did not consider Service Operation in the lecture so far, we need to have a brief introduction. Note that events can be any change of status - informative events where no action is required, hitting some predefined level for some parameter, exceptions that some resource or service is not in operation as usual. Incidents are events which interrupt or potentially interrupt a service. Events which are incidents have to be reported using an interface of the \emph{Event Management System} to the \emph{Incident Management}. Also the breakdown of an configuration item which has no direct impact for a service is an incident. Note that incidents need to be treated and prioritized according to \emph{impact} and \emph{urgency}. Then, a problem is a not known cause for one or several incidents. There are \emph{problem records} with the complete history of a problem and also a \emph{Known Error Data Base} (KEDB) with all of these known errors and their records.
+Nagios unterscheidet zwischen Ereignissen und Host-und Service-Zuständen:
+\begin{enumerate}
+\item Host-Check \\
+Ein Host-Check prüft ob ein Rechner erreichbar ist. Dabei kommt häufig ein einfaches \textit{ping} zum Einsatz. Host-Checks werden hauptsächlich durchgeführt, wenn auf dem Rechner alle laufenden Netzwerkdienste nicht erreichbar sind.
+\item Service-Check \\
+Bei einem Service-Check werden einzelne Netzwerkdienste überprüft, wie beispielsweise HTTP, SMTP etc. aber auch laufende Prozesse, Logfiles oder die CPU-Last.
+\item Ereignisse \\
+Ein Ereignis taucht in Form eines Syslog-Eintrags oder eines SNMP-Traps auf. SNMP-Traps sind asynchrone Nachrichten, die ein SNMP-Agent(Dienst) an eine zentrale Management-Einheit versendet. Bei SNMP handelt es sich um ein Protokoll, welches die Kommunikation zwischen so genannten Managern und Agenten definiert. Der Manager ist die Arbeitskonsole des Administrators, während die Agenten direkt auf den Systemen und Netzwerkkomponenten laufen, die überwacht oder konfiguriert werden sollen.
+\\
+Wenn im Syslog-Eintrag die Meldung erscheint, dass ein Gerät ausgefallen ist, ändert sich der Eintrag erst wenn das Gerät wieder funktionsfähig ist. Wenn man also mit Logfile-Checks regelmäßig prüft, ob innerhalb der letzten halben Stunde ein Eintrag erfolgte, so liefert der Logfile-Check nach Ablauf einer halben Stunde ein OK, weil innerhalb der Zeit kein kritischer Ereignis aufgetreten ist. Tatsächlich aber befindet sich das Gerät im kritischen Zustand.\\
+Überwacht man das Gerät per SNMP-Trap, so informiert ein Alarm-Trap über den Ausfall, und der Zustand des Services wird auf CRITICAL gesetzt bis wieder ein OK-Trap den Zustand auf OK setzt, nachdem das Gerät wieder funktionsfähig ist.
+\\
+Alle Events können in einer Event-Datenbank(EventDB) gesammelt werden. Die Events können über eine Webinterface oder per Nagios-Plugin abgefragt werden. Man kann ähnliche oder gleiche Ereignisse suchen. Der Administrator wird informiert ob zu einem Ereignis ein oder mehrere nicht bestätigte Einträge vorliegen.
+ 
+\end{enumerate}
+Für die Checks werden externe Programme(Plugins) verwendet. Nagios kann damit alles prüfen was sich elektronisch messen lässt. Lediglich müssen die Messdaten als eine vom Computer verwertbare Information bereitgestellt werden mit Hilfe von Sensoren und anderen Messgeräten.\\
 
-The single point of access for the customer is always the \emph{service desk}. Each call of a customer is an incident.
-
-Consider different events, incidents and problems for your email service and check how they can be formally treated with your software system. How is the work of the service desk supported? Treat events, incidents and problems based on a few examples. 
 
 \chapter{Conclusion}
 

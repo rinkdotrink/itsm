@@ -1,33 +1,29 @@
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Evaluation of General Characteristics of the Software}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Basis facts about the software solution}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}Versions and price}{2}{section.2.2}
-\contentsline {section}{\numberline {2.3}Usability}{2}{section.2.3}
-\contentsline {section}{\numberline {2.4}Performance}{2}{section.2.4}
-\contentsline {section}{\numberline {2.5}Documentation}{2}{section.2.5}
-\contentsline {section}{\numberline {2.6}Support}{3}{section.2.6}
-\contentsline {section}{\numberline {2.7}Errors and Bugs}{3}{section.2.7}
-\contentsline {chapter}{\numberline {3}Evaluation of the ITSM Specific Functionalities}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}ITSM Processes}{4}{section.3.1}
-\contentsline {section}{\numberline {3.2}IT Service Management Roles}{4}{section.3.2}
-\contentsline {section}{\numberline {3.3}Scenarios}{4}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Design of an Email Service}{4}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}ITIL Roles}{4}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Service Catalogue}{6}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Further Management of the Email Service}{6}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Configuration Management}{6}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Change Management}{6}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Definite Media Library}{7}{subsection.3.3.7}
-\contentsline {subsection}{\numberline {3.3.8}Knowledge Management}{7}{subsection.3.3.8}
-\contentsline {subsection}{\numberline {3.3.9}Event, Incident and Problem Management}{7}{subsection.3.3.9}
-\contentsline {chapter}{\numberline {4}Conclusion}{8}{chapter.4}
-\contentsline {chapter}{\numberline {A}This is the First Appendix Chapter}{9}{appendix.A}
-\contentsline {section}{\numberline {A.1}Appendix Section}{9}{section.A.1}
-\contentsline {chapter}{\numberline {B}This is the Second Appendix Chapter}{10}{appendix.B}
-\contentsline {section}{\numberline {B.1}Another Appendix Section}{10}{section.B.1}
-\contentsline {chapter}{LIST OF FIGURES}{i}{appendix*.2}
-\contentsline {chapter}{LIST OF TABLES}{iii}{appendix*.3}
-\contentsline {chapter}{LIST OF ALGORITHMS}{v}{appendix*.4}
-\contentsline {chapter}{LIST OF LISTINGS}{vii}{appendix*.5}
-\contentsline {chapter}{LIST OF SYMBOLS}{ix}{appendix*.6}
-\contentsline {chapter}{LIST OF ABBREVIATIONS}{xi}{appendix*.10}
+\contentsline {section}{\numberline {2.2}Versions and price}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Usability}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Performance}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}Documentation}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}Support}{13}{section.2.6}
+\contentsline {section}{\numberline {2.7}Errors and Bugs}{13}{section.2.7}
+\contentsline {chapter}{\numberline {3}Evaluation of the ITSM Specific Functionalities}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}ITSM Processes}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}IT Service Management Roles}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Authorization Levels}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}User Security Settings}{15}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Scenarios}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Design of an Email Service}{17}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}ITIL Roles}{18}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Service Catalogue}{18}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Further Management of the Email Service}{18}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Configuration Management}{18}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Change Management}{18}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Definite Media Library}{18}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Knowledge Management}{19}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}Event, Incident and Problem Management}{19}{subsection.3.3.9}
+\contentsline {chapter}{\numberline {4}Conclusion}{20}{chapter.4}
+\contentsline {chapter}{\numberline {A}This is the First Appendix Chapter}{21}{appendix.A}
+\contentsline {section}{\numberline {A.1}Appendix Section}{21}{section.A.1}
+\contentsline {chapter}{\numberline {B}This is the Second Appendix Chapter}{22}{appendix.B}
+\contentsline {section}{\numberline {B.1}Another Appendix Section}{22}{section.B.1}
